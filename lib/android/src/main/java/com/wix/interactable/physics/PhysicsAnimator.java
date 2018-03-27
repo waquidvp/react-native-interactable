@@ -80,15 +80,15 @@ public class PhysicsAnimator implements Choreographer.FrameCallback {
     }
 
     public void removeBehavior(PhysicsBehavior behavior) {
-+        Iterator<PhysicsBehavior> iterator = behaviors.iterator();
-+
-+        while (iterator.hasNext()) {
-+            if (iterator.next() == behavior) {
-+                iterator.remove();
-+                break;
-+            }
-+        }
-+    }
+        Iterator<PhysicsBehavior> iterator = behaviors.iterator();
+
+        while (iterator.hasNext()) {
+            if (iterator.next() == behavior) {
+                iterator.remove();
+                break;
+            }
+        }
+    }
 
     public void addTempBehavior(PhysicsBehavior behavior) {
         behavior.isTemp = true;
